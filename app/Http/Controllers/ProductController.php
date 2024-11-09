@@ -124,4 +124,10 @@ public function store(Request $request){
     return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
    }
 
+
+   public function show(Request $request, $id){
+    $products = Product::where('id', $id)->first();
+    return view('show', compact('products'));
+   }
+
 }

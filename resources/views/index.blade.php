@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Product Management Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
@@ -74,6 +74,7 @@
                     <th scope="col">Image</th>
                     <th scope="col">Update</th>
                     <th scope="col">Delete</th>
+                    <th scope="col">Details</th>
                     
                     </tr>
                 </thead>
@@ -90,7 +91,7 @@
                     <td ><a href="{{route('products.edit',$product->id)}}">Edit</a></td>
                     <td ><a href="{{route('products.delete',$product->id)}}">Delete</a></td>
                     
-                    
+                    <td ><a href="{{route('products.details',$product->id)}}">Details</a></td>
                     
                     </tr>
 
@@ -114,3 +115,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/nargis5g/product_management_pro.git
+git push -u origin main
